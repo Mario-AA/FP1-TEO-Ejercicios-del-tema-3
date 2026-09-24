@@ -1,5 +1,12 @@
-from cadenas import estiliza_mensaje
-  
+#from cadenas import estiliza_mensaje
+def invierte_cadena():
+    cadena_invertida = ""
+    cadena = input("Ingrese una cadena para invertirla: ")
+    for i in range(0,len(cadena)):
+        cadena_invertida += cadena[-(1+i)]
+    print (cadena_invertida)
+invierte_cadena()
+"""
 def test_estiliza_mensaje():
     print("Probando estiliza_mensaje...")
     assert estiliza_mensaje("Fundamentos de programación 1") == "FuNdAmEnToS dE pRoGrAmAcIóN 1"
@@ -10,3 +17,4 @@ def test_estiliza_mensaje():
 
 test_estiliza_mensaje()
 print("Todas las pruebas pasaron correctamente.")
+"""
